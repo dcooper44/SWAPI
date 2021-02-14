@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewData["Title"] = "PlanetOrPerson";
+}
+
+@model SWAPI.Models.ViewModels.PlanetOrPersonViewModel  
+
+
+    <form asp-controller="StarWars" asp-action="GetPersonById" method="post">
+
+        <label>Input Person ID</label>
+        <input asp-for="PeopleId" />
+
+
+        <button>Search For Person</button>
+
+    </form>
+
+<br />
+<br />
+<br />
+<br />
+<form asp-controller="StarWars" asp-action="GetPlanetById" method="post">
+
+    <label>Input Planet ID</label>
+    <input asp-for="PlanetId" />
+
+    <button>Search For Planet</button>
+
+</form>
+
+
+
